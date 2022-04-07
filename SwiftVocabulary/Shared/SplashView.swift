@@ -29,6 +29,7 @@ struct SplashView: View {
                         
                         Text("Giyeong UM")
                             .font(Font.subheadline).animation(.easeInOut, value: isLogoEnd)
+                            .transition()
                     }
                 }
                 
