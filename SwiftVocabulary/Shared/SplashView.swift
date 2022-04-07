@@ -23,19 +23,20 @@ struct SplashView: View {
                         Spacer()
                         Text("English Vocabulary")
                             .font(Font.largeTitle).italic().frame(maxWidth: 0 + CGFloat(increaseTime))
-                            .lineLimit(1)
+                            .lineLimit(5)
+                            .animation(.easeInOut(duration: 2.0))
                         
                         Spacer()
                         
                         Text("Giyeong UM")
-                            .font(Font.subheadline).animation(.easeInOut, value: isLogoEnd)
-                            .transition()
+                            .font(Font.subheadline).animation(.easeInOut(duration: 1.0), value: isLogoEnd)
+                            .opacity(isLogoEnd ? 1.0 : 0.0)
                     }
-                }
-                
+        }.animation(.easeInOut(duration: 1.0))
+        
                 .onAppear {
-                    Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true){ _ in
-                        increaseTime += 10
+                    Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true){ _ in
+                        increaseTime += 20
                     }
                     
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
