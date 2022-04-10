@@ -16,31 +16,31 @@ struct MainHeaderView: View {
         HStack{
             Spacer()
             if selectedIndex == 0 {
-                Text("First")
+                Text("단어장")
                     .highlighted()
                     .background(menuCapsule)
             } else {
-                Text("First")
+                Text("단어장")
                     .unhighlighted()
                     .onTapGesture {selectedIndex = 0 }
             }
             Spacer()
             if selectedIndex == 1 {
-                Text("Second")
+                Text("암기리스트")
                     .highlighted()
                     .background(menuCapsule)
             } else {
-                Text("Second")
+                Text("암기리스트")
                     .unhighlighted()
                     .onTapGesture {selectedIndex = 1 }
             }
             Spacer()
             if selectedIndex == 2 {
-                Text("Third")
+                Text("설정")
                     .highlighted()
                     .background(menuCapsule)
             } else {
-                Text("Third")
+                Text("설정")
                     .unhighlighted()
                     .onTapGesture {selectedIndex = 2 }
             }

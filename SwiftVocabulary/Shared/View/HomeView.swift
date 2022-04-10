@@ -16,17 +16,17 @@ struct HomeView: View {
             TabView(selection: $selectedIndex) {
                 ZStack {
                 
-                    Text("First")
+                    Text("단어장")
                 }
                 .tag(0)
                 ZStack {
                     
-                    Text("Second")
+                    Text("암기 리스트")
                 }
                 .tag(1)
                 ZStack {
                     
-                    Text("Third")
+                    Text("설정")
                 }
                 .tag(2)
             }
