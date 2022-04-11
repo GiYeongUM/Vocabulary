@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B457941F28046F4B00EC050F /* SettingFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457941E28046F4B00EC050F /* SettingFragment.swift */; };
+		B457942028046F4B00EC050F /* SettingFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457941E28046F4B00EC050F /* SettingFragment.swift */; };
+		B4579423280470BF00EC050F /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4579422280470BF00EC050F /* SettingView.swift */; };
+		B4579424280470BF00EC050F /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4579422280470BF00EC050F /* SettingView.swift */; };
 		B48CCC332801A6DA00B42CB6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CCC322801A6DA00B42CB6 /* HomeViewController.swift */; };
 		B48CCC362801AC7400B42CB6 /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CCC352801AC7400B42CB6 /* MainHeaderView.swift */; };
 		B4BFAEA027FDDF18006932E3 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFAE9F27FDDF18006932E3 /* Tests_iOS.swift */; };
@@ -43,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B457941E28046F4B00EC050F /* SettingFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingFragment.swift; sourceTree = "<group>"; };
+		B4579422280470BF00EC050F /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		B48CCC322801A6DA00B42CB6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B48CCC352801AC7400B42CB6 /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
 		B4BFAE8727FDDF14006932E3 /* SwiftVocabularyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftVocabularyApp.swift; sourceTree = "<group>"; };
@@ -93,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4579421280470A900EC050F /* SettingViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				B4579422280470BF00EC050F /* SettingView.swift */,
+			);
+			path = SettingViewGroup;
+			sourceTree = "<group>";
+		};
 		B48CCC302801A69A00B42CB6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,9 +118,11 @@
 		B48CCC312801A6AB00B42CB6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B4579421280470A900EC050F /* SettingViewGroup */,
 				B4BFAE8827FDDF14006932E3 /* ContentView.swift */,
 				B4BFAEC327FDE085006932E3 /* SplashView.swift */,
 				B4BFAEC627FDE0E6006932E3 /* HomeView.swift */,
+				B457941E28046F4B00EC050F /* SettingFragment.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -339,8 +355,10 @@
 			files = (
 				B48CCC332801A6DA00B42CB6 /* HomeViewController.swift in Sources */,
 				B4BFAEB127FDDF18006932E3 /* ContentView.swift in Sources */,
+				B457941F28046F4B00EC050F /* SettingFragment.swift in Sources */,
 				B4BFAEC727FDE0E6006932E3 /* HomeView.swift in Sources */,
 				B4BFAEAF27FDDF18006932E3 /* SwiftVocabularyApp.swift in Sources */,
+				B4579423280470BF00EC050F /* SettingView.swift in Sources */,
 				B48CCC362801AC7400B42CB6 /* MainHeaderView.swift in Sources */,
 				B4BFAEC427FDE085006932E3 /* SplashView.swift in Sources */,
 			);
@@ -352,6 +370,8 @@
 			files = (
 				B4BFAEB227FDDF18006932E3 /* ContentView.swift in Sources */,
 				B4BFAEC827FDE0E6006932E3 /* HomeView.swift in Sources */,
+				B457942028046F4B00EC050F /* SettingFragment.swift in Sources */,
+				B4579424280470BF00EC050F /* SettingView.swift in Sources */,
 				B4BFAEB027FDDF18006932E3 /* SwiftVocabularyApp.swift in Sources */,
 				B4BFAEC527FDE085006932E3 /* SplashView.swift in Sources */,
 			);

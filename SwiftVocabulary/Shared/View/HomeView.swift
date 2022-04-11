@@ -11,28 +11,31 @@ struct HomeView: View {
     @State var selectedIndex = 0
     @Environment(\.colorScheme) var colorScheme
     var body: some View {
-        VStack(spacing: 0) {
-            MainHeaderView(selectedIndex: $selectedIndex)
-            TabView(selection: $selectedIndex) {
-                ZStack {
-                
-                    Text("단어장")
-                }
-                .tag(0)
-                ZStack {
+        NavigationView{
+            
+            VStack(spacing: 0) {
+                MainHeaderView(selectedIndex: $selectedIndex)
+                TabView(selection: $selectedIndex) {
+                    ZStack {
                     
-                    Text("암기 리스트")
+                        Text("단어장")
+                    }
+                    .tag(0)
+                    ZStack {
+                        
+                        Text("암기 리스트")
+                    }
+                    .tag(1)
+                    ZStack {
+                        
+                        SettingFragment()
+                    }
+                    .tag(2)
                 }
-                .tag(1)
-                ZStack {
-                    
-                    Text("설정")
-                }
-                .tag(2)
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+                .ignoresSafeArea()
             }
-            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-            .ignoresSafeArea()
-        }
+        }.navigationBarHidden(true)
     }
 }
 
