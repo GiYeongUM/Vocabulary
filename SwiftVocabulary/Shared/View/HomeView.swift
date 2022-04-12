@@ -11,7 +11,6 @@ struct HomeView: View {
     @State var selectedIndex = 0
     @Environment(\.colorScheme) var colorScheme
     var body: some View {
-        NavigationView{
             
             VStack(spacing: 0) {
                 MainHeaderView(selectedIndex: $selectedIndex)
@@ -35,7 +34,7 @@ struct HomeView: View {
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                 .ignoresSafeArea()
             }
-        }.navigationBarHidden(true)
+    
     }
 }
 
