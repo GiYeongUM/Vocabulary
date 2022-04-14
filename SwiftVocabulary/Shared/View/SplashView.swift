@@ -17,7 +17,7 @@ struct SplashView: View {
     
     var body: some View {
         ZStack {
-            HomeView().animation(.easeInOut, value: changeView).opacity(changeView ? 1 : 0)
+            MainView().animation(.easeInOut, value: changeView).opacity(changeView ? 1 : 0)
 
                 VStack{
                     Spacer()

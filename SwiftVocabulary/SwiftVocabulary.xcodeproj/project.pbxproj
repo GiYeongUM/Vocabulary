@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B457941F28046F4B00EC050F /* SettingFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457941E28046F4B00EC050F /* SettingFragment.swift */; };
 		B4579423280470BF00EC050F /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4579422280470BF00EC050F /* SettingView.swift */; };
+		B45794262808637900EC050F /* HomeFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45794252808637900EC050F /* HomeFragment.swift */; };
 		B48CCC332801A6DA00B42CB6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CCC322801A6DA00B42CB6 /* HomeViewController.swift */; };
 		B48CCC362801AC7400B42CB6 /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CCC352801AC7400B42CB6 /* MainHeaderView.swift */; };
 		B4BFAEA027FDDF18006932E3 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFAE9F27FDDF18006932E3 /* Tests_iOS.swift */; };
@@ -17,7 +18,7 @@
 		B4BFAEB127FDDF18006932E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFAE8827FDDF14006932E3 /* ContentView.swift */; };
 		B4BFAEB327FDDF18006932E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4BFAE8927FDDF18006932E3 /* Assets.xcassets */; };
 		B4BFAEC427FDE085006932E3 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFAEC327FDE085006932E3 /* SplashView.swift */; };
-		B4BFAEC727FDE0E6006932E3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFAEC627FDE0E6006932E3 /* HomeView.swift */; };
+		B4BFAEC727FDE0E6006932E3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BFAEC627FDE0E6006932E3 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		B457941E28046F4B00EC050F /* SettingFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingFragment.swift; sourceTree = "<group>"; };
 		B4579422280470BF00EC050F /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		B45794252808637900EC050F /* HomeFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFragment.swift; sourceTree = "<group>"; };
 		B48CCC322801A6DA00B42CB6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B48CCC352801AC7400B42CB6 /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
 		B4BFAE8727FDDF14006932E3 /* SwiftVocabularyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftVocabularyApp.swift; sourceTree = "<group>"; };
@@ -44,7 +46,7 @@
 		B4BFAEA127FDDF18006932E3 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
 		B4BFAEA727FDDF18006932E3 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4BFAEC327FDE085006932E3 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		B4BFAEC627FDE0E6006932E3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B4BFAEC627FDE0E6006932E3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,9 @@
 				B4579421280470A900EC050F /* SettingViewGroup */,
 				B4BFAE8827FDDF14006932E3 /* ContentView.swift */,
 				B4BFAEC327FDE085006932E3 /* SplashView.swift */,
-				B4BFAEC627FDE0E6006932E3 /* HomeView.swift */,
+				B4BFAEC627FDE0E6006932E3 /* MainView.swift */,
 				B457941E28046F4B00EC050F /* SettingFragment.swift */,
+				B45794252808637900EC050F /* HomeFragment.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,7 +282,8 @@
 				B48CCC332801A6DA00B42CB6 /* HomeViewController.swift in Sources */,
 				B4BFAEB127FDDF18006932E3 /* ContentView.swift in Sources */,
 				B457941F28046F4B00EC050F /* SettingFragment.swift in Sources */,
-				B4BFAEC727FDE0E6006932E3 /* HomeView.swift in Sources */,
+				B4BFAEC727FDE0E6006932E3 /* MainView.swift in Sources */,
+				B45794262808637900EC050F /* HomeFragment.swift in Sources */,
 				B4BFAEAF27FDDF18006932E3 /* SwiftVocabularyApp.swift in Sources */,
 				B4579423280470BF00EC050F /* SettingView.swift in Sources */,
 				B48CCC362801AC7400B42CB6 /* MainHeaderView.swift in Sources */,
