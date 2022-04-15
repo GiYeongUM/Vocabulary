@@ -10,7 +10,16 @@ import SwiftUI
 struct HomeFragment: View {
     var body: some View {
         VStack{
+            
             Text("오늘의 단어").font(.title)
+            ScrollView {
+                LazyVStack {
+                    ForEach(1...10, id: \.self) { count in
+                        Text("Row \(count)")
+                    }
+                }
+            }
+            
             
         }.frame(
             minWidth: 0,
@@ -18,7 +27,7 @@ struct HomeFragment: View {
             minHeight: 0,
             maxHeight: .infinity,
             alignment: .topLeading
-          ).background(.blue)
+        ).padding(10)
     }
 }
 
