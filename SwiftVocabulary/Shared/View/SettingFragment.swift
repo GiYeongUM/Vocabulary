@@ -10,20 +10,21 @@ import SwiftUI
 struct SettingFragment: View {
     var body: some View {
         List{
-        
-            NavigationLink(destination: SettingView()) {
-                Text("설정")
+            SettingListItem(destination: SettingView(), text: "계정")
+            SettingListItem(destination: SettingView(), text: "알림")
+            SettingListItem(destination: SettingView(), text: "화면")
+            SettingListItem(destination: SettingView(), text: "소리")
+        }.background(Color.white.ignoresSafeArea())
+            .onAppear {
+                // Set the default to clear
+                UITableView.appearance().backgroundColor = .clear
+                
             }
-            Text("설정")
-            Text("설정")
-            Text("설정")
-            Text("설정")
-        }
     }
 }
 
 struct SettingFragment_Previews: PreviewProvider {
     static var previews: some View {
-        SettingFragment()
+        MainView(selectedIndex: 2)
     }
 }
