@@ -9,17 +9,20 @@ import SwiftUI
 
 struct SettingFragment: View {
     var body: some View {
-        List{
-            SettingListItem(destination: SettingView(), text: "계정")
-            SettingListItem(destination: SettingView(), text: "알림")
-            SettingListItem(destination: SettingView(), text: "화면")
-            SettingListItem(destination: SettingView(), text: "소리")
-        }.background(Color.white.ignoresSafeArea())
-            .onAppear {
-                // Set the default to clear
-                UITableView.appearance().backgroundColor = .clear
-                
+        VStack{
+            List{
+                SettingListItem(destination: SettingView(), text: "계정")
+                SettingListItem(destination: SettingView(), text: "알림")
+                SettingListItem(destination: SettingView(), text: "화면")
+                SettingListItem(destination: SettingView(), text: "소리")
             }
+            List{
+                SettingListItem(destination: SettingView(), text: "계정")
+                SettingListItem(destination: SettingView(), text: "알림")
+                SettingListItem(destination: SettingView(), text: "화면")
+                SettingListItem(destination: SettingView(), text: "소리")
+            }
+        }
     }
 }
 

@@ -12,14 +12,23 @@ struct SettingListItem<TargetView : View> : View {
     var destination : TargetView
     var text : String
     var body: some View {
+        
         NavigationLink(destination: destination) {
-            Text(text)
+            HStack {
+                Text(text)
+                Spacer()
+            }.frame(minWidth: 0, maxWidth: .infinity)
         }
     }
 }
 
 struct SettingListItem_Previews: PreviewProvider {
     static var previews: some View {
-        SettingListItem(destination: SettingView(), text: "setting")
+        MainView(selectedIndex: 2)
+//        SettingListItem(destination: SettingView(), text: "setting")
+//                .previewLayout(.sizeThatFits)
+//                .padding()
+//                .previewDevice("Setting List item")
+        
     }
 }
