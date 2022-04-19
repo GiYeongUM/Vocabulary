@@ -9,20 +9,15 @@ import SwiftUI
 
 struct SettingFragment: View {
     var body: some View {
-        VStack{
-            List{
+            VStack(alignment: .leading, spacing: 15 ){
                 SettingListItem(destination: SettingView(), text: "계정")
                 SettingListItem(destination: SettingView(), text: "알림")
                 SettingListItem(destination: SettingView(), text: "화면")
                 SettingListItem(destination: SettingView(), text: "소리")
-            }
-            List{
-                SettingListItem(destination: SettingView(), text: "계정")
-                SettingListItem(destination: SettingView(), text: "알림")
-                SettingListItem(destination: SettingView(), text: "화면")
-                SettingListItem(destination: SettingView(), text: "소리")
-            }
-        }
+                Spacer()
+            }.padding()
+            
+        
     }
 }
 

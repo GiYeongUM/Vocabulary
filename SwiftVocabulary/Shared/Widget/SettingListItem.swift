@@ -14,10 +14,12 @@ struct SettingListItem<TargetView : View> : View {
     var body: some View {
         
         NavigationLink(destination: destination) {
-            HStack {
-                Text(text)
+            HStack(alignment: .center) {
+                Text(text).foregroundColor(.black).padding(.horizontal)
                 Spacer()
-            }.frame(minWidth: 0, maxWidth: .infinity)
+                Image(systemName: "chevron.right").foregroundColor(.black).padding(.horizontal)
+                
+            }.frame(minWidth: 0, maxWidth: .infinity, minHeight: UIScreen.screenHeight / 20).background()
         }
     }
 }
